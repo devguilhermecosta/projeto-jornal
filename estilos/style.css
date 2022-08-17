@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300&display=swap');
+
+:root {
+    --azul_1: #1C69C7;
+    --azul_2: #3B93FF;
+    --azul_3: #2080F5;
+    --branco_1: #ffffff;
+    --laranja_1: #F5A920;
+    --laranja_2: #A86D00;
+    --fonte_logo: 'Fredericka the Great', cursive;
+    --fonte_titulo_e_texto: 'Open Sans', sans-serif;
+}
+

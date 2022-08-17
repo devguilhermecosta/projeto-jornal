@@ -15,17 +15,8 @@ FONTE PARA A LOGO:
         @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
     </style>
 
-FONTE PARA O TÍTULO DA MATÉRIA:
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
-    </style>
+FONTE PARA O TÍTULO DA MATÉRIA: open sans 800
 
-FONTE PARA O TEXTO DA MATÉRIA:
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-    </style>
+FONTE PARA O TEXTO DA MATÉRIA: open sans 300
 
-FONTE PARA O TEXTO DO MENU
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
-    </style>
+FONTE PARA O TEXTO DO MENU: open sans 300 italic
