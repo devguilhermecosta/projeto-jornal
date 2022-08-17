@@ -74,7 +74,7 @@ footer {
     align-items: center; 
 }
 
-.menu label, .menu input {
+.close-menu, .label-close-menu {
     display: none;
 }
 
@@ -137,28 +137,34 @@ footer {
         align-self: center;
     }
 
-    .menu ul {
+    .menu ul{
         display: none;
     }
 
-    .menu label {
+    .label-close-menu {
         display: block;
         font-size: 4rem;
+        width: 5rem;
+        height: 4.5rem;
+        text-align: center;
         background-color: var(--azul_1);
         color: var(--branco_1);
+        font-family: var(--fonte_titulo_e_texto);
         border-radius: 1rem;
         cursor: pointer;
     }
 
-    .menu label::before {
+    .label-close-menu::after {
         content: '☰';
+        font-size: 4rem;
     }
 
-    .menu input {
-        display: block;
+    .close-menu:checked ~ .label-close-menu::after {
+        content: 'X';
     }
 
-    .menu input:checked + .menu label::after {
-        content: 'x';
+    .close-menu:checked ~ .itens-menu {
+        display: inline;
     }
+
 }
