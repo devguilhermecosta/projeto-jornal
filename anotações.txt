@@ -1,0 +1,31 @@
+- cores tema: azul e branco;
+- título de cada notícia: azul;
+- cor do texto da matéria: preto;
+- cor auxiliar: laranja;
+
+- PALLETA DE CORES:
+    AZUL 1 : #1C69C7
+    AZUL 2 : #3B93FF
+    AZUL 3 : #2080F5
+    LARANJA 1: #A86D00
+    LARANJA 2: #F5A920
+
+FONTE PARA A LOGO:
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    </style>
+
+FONTE PARA O TÍTULO DA MATÉRIA:
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+    </style>
+
+FONTE PARA O TEXTO DA MATÉRIA:
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    </style>
+
+FONTE PARA O TEXTO DO MENU
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+    </style>
