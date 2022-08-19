@@ -66,7 +66,7 @@ footer {
     cursor: pointer;
 }
 
-.menu ul {
+.itens-menu {
     list-style-type: none;
     display: flex;
     flex-flow: row wrap;
@@ -78,7 +78,7 @@ footer {
     display: none;
 }
 
-.menu ul li a {
+.itens-menu li a {
     text-decoration: none;
     font-size: 2rem;
     color: var(--azul_2);
@@ -89,7 +89,7 @@ footer {
     transition: all 300ms ease;
 }
 
-.menu ul li a:hover {
+.itens-menu li a:hover {
     background-color: var(--azul_2);
     color: var(--branco_1);
 }
@@ -115,56 +115,4 @@ footer {
 .user-button-menu input:hover {
     background-color: var(--branco_1);
     color: var(--azul_3);
-}
-
-@media screen and (max-width: 1222px) {
-    .menu ul {
-        row-gap: 3rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .logo {
-        order: 1;
-    }
-
-    .menu {
-        order: 3;
-    }
-
-    .user-button-menu {
-        order: 2;
-        align-self: center;
-    }
-
-    .menu ul{
-        display: none;
-    }
-
-    .label-close-menu {
-        display: block;
-        font-size: 4rem;
-        width: 5rem;
-        height: 4.5rem;
-        text-align: center;
-        background-color: var(--azul_1);
-        color: var(--branco_1);
-        font-family: var(--fonte_titulo_e_texto);
-        border-radius: 1rem;
-        cursor: pointer;
-    }
-
-    .label-close-menu::after {
-        content: '☰';
-        font-size: 4rem;
-    }
-
-    .close-menu:checked ~ .label-close-menu::after {
-        content: 'X';
-    }
-
-    .close-menu:checked ~ .itens-menu {
-        display: inline;
-    }
-
 }
