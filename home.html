@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Local | Home</title>
     <link rel="shortcut icon" href="imagens/favicon/favicon_1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/css/style.css" media="all">
+    <link rel="stylesheet" href="estilos/css/style.css" media="all"> <!-- para telas de até 768px -->
     <link rel="stylesheet" href="estilos/css/portrait.css" media="screen" and (orientation: portrait)>
     <link rel="stylesheet" href="estilos/css/landscape.css" media="screen" and (orientation: landscape)>
     <link rel="stylesheet" href="estilos/css/print.css" media="print">
@@ -20,26 +20,26 @@
 
         <!-- menu -->
         <menu class="menu">
-            <input class="close-menu" type="checkbox" name="ipt-menu" id="ipt-menu">
-            <label class="label-close-menu" for="ipt-menu"></label>
+            <label for="menu-mobile" id="label-menu"></label>
+            <input type="checkbox" name="menu-mobile" id="menu-mobile">
             <ul class="itens-menu">
-                <li><a href="#">Editoriais</a></li>
-                <li><a href="#">Últimas</a></li>
-                <li><a href="#">Brasil</a></li>
-                <li><a href="#">Mundo</a></li>
-                <li><a href="#">Economia</a></li>
-                <li><a href="#">Saúde</a></li>
-                <li><a href="#">Cultura</a></li>
-                <li><a href="#">Esportes</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Editoriais</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Últimas</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Brasil</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Mundo</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Economia</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Saúde</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Cultura</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Esportes</a></li>
             </ul>
         </menu>
 
         <!-- div com botões de ASSINE JÁ e LOGIN -->
         <div class="user-button-menu">
             <!-- botão de ASSINE já -->
-            <input type="button" value="Assine já">
+            <input type="button" value="Assine já" id="ass">
             <!-- botão de LOGIN -->
-            <input type="button" value="Login">
+            <input type="button" value="" id="user">
         </div>
 
     </header>
@@ -53,5 +53,7 @@
     <footer>
         <H2>FOOTER</H2>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@
     --azul_1: #1C69C7;
     --azul_2: #3B93FF;
     --azul_3: #2080F5;
+    --azul_4: #2080f5a6;
     --branco_1: #ffffff;
     --laranja_1: #F5A920;
     --laranja_2: #A86D00;
@@ -58,55 +59,86 @@ footer {
 
 .logo {
     font-family: var(--fonte_logo);
-    font-size: 8rem;
+    font-size: 4rem;
     border: .1rem solid var(--azul_1);
     border-radius: 1rem;
     color: var(--azul_1);
     padding: 0 .5rem;
     cursor: pointer;
+    align-self: flex-start;
+    order: 1;
 }
 
-.itens-menu {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center; 
+.menu {
+    order: 2;
 }
 
-.close-menu, .label-close-menu {
+#label-menu::before {
+    content: '☰';
+    font-size: 3rem;
+    color: var(--azul_1);
+    border: 1px solid var(--azul_2);
+    border-radius: 1rem;
+    padding: 0rem .5rem;
+    cursor: pointer;
+}
+
+#menu-mobile {
     display: none;
 }
 
-.itens-menu li a {
+#menu-mobile:checked~.itens-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    width: 100vw;
+    list-style-type: none;
+    text-align: center;
+    background-color: var(--azul_4);
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+#menu-mobile:checked~.itens-menu li {
+    padding: .5rem 0;
+}
+
+#menu-mobile:checked~.itens-menu li a {
+    color: var(--branco_1);
     text-decoration: none;
-    font-size: 2rem;
-    color: var(--azul_2);
-    padding: 1rem 1rem;
-    margin: 0 1rem;
-    border: 1px solid var(--azul_2);
-    border-radius: 1.5rem;
+    font-family: var(--fonte_titulo_e_texto);
+    font-weight: bold;
     transition: all 300ms ease;
 }
 
-.itens-menu li a:hover {
-    background-color: var(--azul_2);
-    color: var(--branco_1);
+#menu-mobile:checked~.itens-menu li a:hover {
+    font-size: 1.6rem;
+}
+
+#menu-mobile:checked~.itens-menu li a:hover::after {
+    content: ' ☜';
+}
+
+.itens-menu {
+    display: none;
 }
 
 .user-button-menu {
-    align-self: flex-start;
-    text-align: right;
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 6.5rem;
 }
 
 .user-button-menu input {
-    margin: 1rem 1rem;
+    margin: 0 1rem;
     padding: 1rem;
     border-radius: 1.5rem;
     background-color: var(--azul_3);
     color: var(--branco_1);
     font-family: var(--fonte_titulo_e_texto);
-    font-size: 1.5rem;
+    font-size: 1rem;
     border: 1px solid var(--azul_3);
     cursor: pointer;
     transition: all 300ms ease;
@@ -115,4 +147,19 @@ footer {
 .user-button-menu input:hover {
     background-color: var(--branco_1);
     color: var(--azul_3);
+}
+
+.user-button-menu input[id="user"] {
+    background-image: url('../../imagens/user/user.png');
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    transition: all 300ms ease-in-out;
+}
+
+.user-button-menu input[id="user"]:hover {
+    transform: translate(3%, 3%) scale(1.2);
 }
