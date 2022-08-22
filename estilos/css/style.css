@@ -76,6 +76,10 @@ footer {
     order: 2;
 }
 
+.itens-menu {
+    display: none;
+}
+
 #label-menu::before {
     content: '\002630';
     font-size: 3rem;
@@ -149,10 +153,6 @@ footer {
 
 #menu-mobile:checked~.itens-menu li a:hover::after {
     content: ' ☜';
-}
-
-.itens-menu {
-    display: none;
 }
 
 .user-button-menu {
