@@ -204,6 +204,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     place-items: center;
+    background-color: #ccc;
 }
 
 .box-noticias {
@@ -221,7 +222,7 @@ footer {
 
 .noticias {
     max-width: 30rem;
-    border: 1px solid var(--azul_2);
+    background-color: var(--branco_1);
     padding: 1rem;
     margin: .5rem 0;
     text-align: center;
