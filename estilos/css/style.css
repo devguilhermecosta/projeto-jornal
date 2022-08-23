@@ -54,8 +54,13 @@ main {
 }
 
 footer {
-    background-color: darkblue;
     grid-area: footer;
+    background-color: var(--azul_3);
+    font-family: var(--fonte_titulo_e_texto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*CONFIGURAÇÕES DO HEADER*/
@@ -257,3 +262,30 @@ footer {
     text-align: left;
     color: var(--cinza_1);
 }
+
+/* FIM DAS CONFIGURAÇÕES DO MAIN */
+
+/* INICIO DAS CONFIGURAÇÕES DO FOOTER */
+
+.detalhes-rodape {
+    text-align: center;
+}
+
+.detalhes-rodape a {
+    display: block;
+    padding: .3rem;
+    text-decoration: none;
+    color: var(--branco_1);
+}
+
+.detalhes-rodape a:hover::after {
+    content: ' ☜';
+}   
+
+footer p {
+    padding: .3rem;
+    width: 100%;
+    background-color: var(--azul_1);
+}
+
+/* FIM DAS CONFIGURAÇÕES DO FOOTER */
