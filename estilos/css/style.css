@@ -29,6 +29,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -261,6 +262,22 @@ footer {
     font-size: .9rem;
     text-align: left;
     color: var(--cinza_1);
+}
+
+input[value=">"] {
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    color: var(--branco_1);
+    background-color: var(--azul_3);
+    right: 0;
+    bottom: 0;
+    margin: 0 2rem 2rem 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotate(270deg);
 }
 
 /* FIM DAS CONFIGURAÇÕES DO MAIN */
