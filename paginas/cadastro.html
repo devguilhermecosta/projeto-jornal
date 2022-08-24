@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Local | Cadastro</title>
+    <link rel="shortcut icon" href="imagens/favicon/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/css/style.css" media="all"> <!-- para telas de até 768px -->
+    <link rel="stylesheet" href="../estilos/css/cadastro.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+
+        <!-- logo -->
+        <p class="logo">JL</p>
+
+        <!-- menu -->
+        <menu class="menu">
+            <input type="checkbox" name="menu-mobile" id="menu-mobile">
+            <label for="menu-mobile" id="label-menu"></label>
+            <label for="menu-mobile" id="label-menu-2"></label>
+            <ul class="itens-menu">
+                <li><a href="#" class="btn-menu" onclick="fechar()">Editoriais</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Últimas</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Brasil</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Mundo</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Economia</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Saúde</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Cultura</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Esportes</a></li>
+            </ul>
+        </menu>
+
+        <!-- div com botões de ASSINE JÁ e LOGIN -->
+        <div class="user-button-menu">
+            <!-- botão de ASSINE já -->
+            <input type="button" value="Assine já" id="ass">
+            <!-- botão de LOGIN -->
+            <input type="button" value="" id="user">
+        </div>
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- noticias e últimas noticias -->
+        <section class="principal">
+            <h1 class="titulo-principal">Cadastro</h1>
+
+        <form action="#" method="POST" class="cad-user" autocomplete="on">
+            <fieldset>
+                <p>Dados pessoais</p>
+
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Ex: Guilherme">
+
+                <label for="isnome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isnome" requried placeholder="Ex: Silva">
+
+                <label for="iidade">Idade:</label>
+                <input type="number" name="idade" id="iidade" min="1" max="150" required>
+
+                <h2>Gênero:</h2>
+                <p class="sexo">
+                    <input type="radio" name="sexo" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </p>
+
+                <p class="sexo">
+                    <input type="radio" name="sexo" id="feminino" value="feminino" checked>
+                    <label for="feminino">Feminino</label>
+                </p>
+
+                <p class="sexo">
+                    <input type="radio" name="sexo" id="outro" value="outro">
+                    <label for="outro">Outro</label>
+                </p>
+
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required placeholder="email@email.com">
+
+                <label for="iconfemail">Confirmar e-mail:</label>
+                <input type="email" name="confemail" id="iconfemail" required placeholder="email@email.com">
+            </fieldset>
+
+            <fieldset>
+                <p>Endereço</p>
+
+                <label for="irua">Rua:</label>
+                <input type="text" name="rua" id="irua" required placeholder="Ex: Rua das Oliveiras">
+
+                <label for="inumeri">Número:</label>
+                <input type="number" name="numero" id="inumero" min="1" max="20000" required>
+
+                <label for="iapto">Apartamento:</label>
+                <input type="text" name="apto" id="iapto" placeholder="Opcional">
+
+                <label for="ibairro">Bairro:</label>
+                <input type="text" name="bairro" id="ibairro" required placeholder="Ex: Centro">
+
+                <label for="imunicipio">Municipio:</label>
+                <input type="text" name="municipio" id="imunicipio" required placeholder="Ex: Curitiba">
+
+                <label for="iestado">Estado:</label>
+                <!-- <input type="text" name="estado" id="iestado"> -->
+                <select name="estado" id="iestado" required>
+                    <option value="" selected >Selecione um estado</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhã">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+
+                <label for="icep">Cep:</label>
+                <input type="text" name="cep" id="icep" required placeholder="Formato: 00.000-000">
+
+                <label for="icomp">Complemento:</label>
+                <input type="text" name="complemento" id="icomplemento" placeholder="Opcional">
+            </fieldset>
+
+            <fieldset>
+                <p>Usuário</p>
+                
+                <label for="iuser">Usuario:</label>
+                <input type="text" name="user" id="iuser" required>
+
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" min="8" max="15">
+                <div class="text-senha">
+                    <p>A senha deve ter entre 8 e 15 caracteres</p>
+                    <p>Deve ter letras e números</p>
+                    <p>Pelo menos uma letra minúscula</p>
+                    <p>Pelo menos uma letra maiúscula</p>
+                    <p>Pelo menos um caractere especial</p>
+                </div>
+
+                <label for="ireptsenha">Repita a senha:</label>
+                <input type="password" name="reptsenha" id="ireptsenha" required min="8" max="15">
+            </fieldset>
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <article class="detalhes-rodape">
+            <a href="#">Fale conosco</a>
+            <a href="#">Portal do assinante</a>
+        </article>
+        
+        <article class="detalhes-rodape">
+            <a href="#">Anuncie</a>
+            <a href="#">Trabalhe conosco</a>
+        </article>
+
+        <article class="detalhes-rodape">
+            <a href="#">Termos de uso</a>
+            <a href="#">Política de privacidade</a>
+        </article>
+        <p>&copy;JL 2020-2022</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

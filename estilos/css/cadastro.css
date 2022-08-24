@@ -1,0 +1,61 @@
+/* INICIO DAS CONFIGURAÇÕES DO FORMULÁRIO DE CADASTRO DE USUÁRIO */
+
+.cad-user {
+    font-size: 1.5rem;
+}
+
+.cad-user label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.cad-user input {
+    height: 3rem;
+}
+
+.cad-user fieldset {
+    margin: 1.5rem 0;
+    border: none;
+    background-color: var(--branco_1);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.cad-user fieldset p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: left;
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.cad-user fieldset h2 {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.sexo {
+    padding: 0 !important;    
+}
+
+.sexo > label {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 100;
+    padding: 0;
+}
+
+.sexo > input {
+    vertical-align: bottom;
+}
+
+.text-senha > p {
+    font-weight: normal !important;
+    font-style: normal !important;
+    font-size: 1rem !important;
+    padding: .3rem 0 !important;
+}
