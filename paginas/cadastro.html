@@ -56,48 +56,62 @@
         <form action="#" method="get" class="cad-user" autocomplete="on">
 
             <!-- dados pessoais -->
-            <fieldset>
+            <fieldset class="field-flex">
                 <p>Dados pessoais</p>
 
                 <!-- nome -->
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" required placeholder="Ex: Guilherme">
+                <div class="box">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" required placeholder="Ex: Guilherme">
+                </div>
 
                 <!-- sobrenome -->
-                <label for="isnome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="isnome" requried placeholder="Ex: Silva">
+                <div class="box">
+                    <label for="isnome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isnome" requried placeholder="Ex: Silva">
+                </div>
 
                 <!-- idade -->
-                <label for="iidade">Idade:</label>
-                <input type="number" name="idade" id="iidade" min="1" max="150" required>
+                <div class="box">
+                    <label for="iidade">Idade:</label>
+                    <input type="number" name="idade" id="iidade" min="1" max="150" required>
+                </div>
 
                 <!-- genero -->
                 <h2>Gênero:</h2>
-                <p class="sexo">
+
+                <!-- genero masculino -->
+                <div class="sexo">
                     <input type="radio" name="sexo" id="masculino" value="masculino">
                     <label for="masculino">Masculino</label>
-                </p>
+                </div>
 
-                <p class="sexo">
+                <!-- genero feminino -->
+                <div class="sexo">
                     <input type="radio" name="sexo" id="feminino" value="feminino" checked>
                     <label for="feminino">Feminino</label>
-                </p>
+                </div>
 
-                <p class="sexo">
+                <!-- genero -> outro -->
+                <div class="sexo">
                     <input type="radio" name="sexo" id="outro" value="outro">
                     <label for="outro">Outro</label>
-                </p>
+                </div>
                 
                 <!-- email -->
-                <label for="iemail">E-mail:</label>
-                <input type="email" name="email" id="iemail" required placeholder="email@email.com">
+                <div class="box">
+                    <label for="iemail">E-mail:</label>
+                    <input type="email" name="email" id="iemail" required placeholder="email@email.com">
 
-                <label for="iconfemail">Confirmar e-mail:</label>
-                <input type="email" name="confemail" id="iconfemail" required placeholder="email@email.com">
+                    <label for="iconfemail">Confirmar e-mail:</label>
+                    <input type="email" name="confemail" id="iconfemail" required placeholder="email@email.com">
+                </div>
 
                 <!-- telefone -->
-                <label for="itel">Telefone:</label>
-                <input type="text" name="tel" id="itel" required placeholder="Ex: (XX) 9 1111-1111">
+                <div class="box">
+                    <label for="itel">Telefone:</label>
+                    <input type="text" name="tel" id="itel" required placeholder="Ex: (XX) 9 1111-1111">
+                </div>
             </fieldset>
 
             <!-- endereço -->
@@ -105,24 +119,34 @@
                 <p>Endereço</p>
 
                 <!-- rua -->
-                <label for="irua">Rua:</label>
-                <input type="text" name="rua" id="irua" required placeholder="Ex: Rua das Oliveiras">
+                <div class="box">
+                    <label for="irua">Rua:</label>
+                    <input type="text" name="rua" id="irua" required placeholder="Ex: Rua das Oliveiras">
+                </div>
 
                 <!-- numero -->
-                <label for="inumeri">Número:</label>
-                <input type="number" name="numero" id="inumero" min="1" max="20000" required>
+                <div class="box">
+                    <label for="inumeri">Número:</label>
+                    <input type="number" name="numero" id="inumero" min="1" max="20000" required>
+                </div>
 
                 <!-- apartamento -->
-                <label for="iapto">Apartamento:</label>
-                <input type="text" name="apto" id="iapto" placeholder="Opcional">
+                <div class="box">
+                    <label for="iapto">Apartamento:</label>
+                    <input type="text" name="apto" id="iapto" placeholder="Opcional">
+                </div>
 
                 <!-- bairro -->
-                <label for="ibairro">Bairro:</label>
-                <input type="text" name="bairro" id="ibairro" required placeholder="Ex: Centro">
+                <div class="box">
+                    <label for="ibairro">Bairro:</label>
+                    <input type="text" name="bairro" id="ibairro" required placeholder="Ex: Centro">
+                </div>
 
                 <!-- municipio -->
-                <label for="imunicipio">Municipio:</label>
-                <input type="text" name="municipio" id="imunicipio" required placeholder="Ex: Curitiba">
+                <div class="box">
+                    <label for="imunicipio">Municipio:</label>
+                    <input type="text" name="municipio" id="imunicipio" required placeholder="Ex: Curitiba">
+                </div>
 
                 <!-- estado -->
                 <label for="iestado">Estado:</label>
@@ -158,24 +182,33 @@
                 </select>
 
                 <!-- cep -->
-                <label for="icep">Cep:</label>
-                <input type="text" name="cep" id="icep" required placeholder="Formato: 00.000-000">
+                <div class="box">
+                    <label for="icep">Cep:</label>
+                    <input type="text" name="cep" id="icep" required placeholder="Formato: 00.000-000">
+                </div>
 
                 <!-- complemento -->
-                <label for="icomp">Complemento:</label>
-                <input type="text" name="complemento" id="icomplemento" placeholder="Opcional">
+                <div class="box">
+                    <label for="icomp">Complemento:</label>
+                    <input type="text" name="complemento" id="icomplemento" placeholder="Opcional">
+                </div>
             </fieldset>
 
             <!-- usuario -->
             <fieldset>
+
                 <p>Usuário</p>
                 
-                <label for="iuser">Usuario:</label>
-                <input type="text" name="user" id="iuser" required>
+                <!-- nome usuario -->
+                <div class="box">
+                    <label for="iuser">Usuario:</label>
+                    <input type="text" name="user" id="iuser" required>
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" min="8" max="15">
+                </div>
 
-                <label for="isenha">Senha:</label>
-                <input type="password" name="senha" id="isenha" min="8" max="15">
-                <div class="text-senha">
+                <!-- senha -->
+                <div class="text-senha box">
                     <p>A senha deve ter entre 8 e 15 caracteres</p>
                     <p>Deve ter letras e números</p>
                     <p>Pelo menos uma letra minúscula</p>
@@ -183,8 +216,11 @@
                     <p>Pelo menos um caractere especial</p>
                 </div>
 
-                <label for="ireptsenha">Repita a senha:</label>
-                <input type="password" name="reptsenha" id="ireptsenha" required min="8" max="15">
+                <!-- repetir a senha -->
+                <div class="box">
+                    <label for="ireptsenha">Repita a senha:</label>
+                    <input type="password" name="reptsenha" id="ireptsenha" required min="8" max="15">
+                </div>
             </fieldset>
 
             <!-- botões -->

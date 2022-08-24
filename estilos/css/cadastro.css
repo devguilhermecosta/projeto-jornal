@@ -16,7 +16,6 @@
     height: 3rem;
     border: 1px solid #ccc;
     width: 100%;
-    max-width: 400px;
 }
 
 .cad-user input:focus {
@@ -29,6 +28,10 @@
     background-color: var(--branco_1);
     padding: 1rem;
     border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cad-user fieldset p {
@@ -44,6 +47,11 @@
     padding-top: 1rem;
     font-size: 1.5rem;
     font-weight: normal;
+}
+
+.box {
+    width: 90%;
+    max-width: 40rem;
 }
 
 .sexo {
