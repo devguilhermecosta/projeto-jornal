@@ -3,6 +3,8 @@
 
 .cad-user {
     font-size: 1.5rem;
+    width: 85vw;
+    max-width: 800px;
 }
 
 .cad-user label {
@@ -13,6 +15,8 @@
 .cad-user input {
     height: 3rem;
     border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
 }
 
 .cad-user input:focus {
@@ -57,6 +61,7 @@
 
 .sexo > input {
     vertical-align: bottom;
+    width: 1rem;
 }
 
 .text-senha > p {
