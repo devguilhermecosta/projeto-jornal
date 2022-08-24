@@ -7,7 +7,7 @@
     <title>Jornal Local | Cadastro</title>
     <link rel="shortcut icon" href="imagens/favicon/favicon_1.ico" type="image/x-icon">
     <link rel="stylesheet" href="../estilos/css/style.css" media="all"> <!-- para telas de até 768px -->
-    <link rel="stylesheet" href="../estilos/css/cadastro.css">
+    <link rel="stylesheet" href="../estilos/css/cadastro.css"> <!-- style para a página de cadastro -->
 </head>
 <body>
     <!-- header -->
@@ -38,7 +38,8 @@
         <!-- div com botões de ASSINE JÁ e LOGIN -->
         <div class="user-button-menu">
             <!-- botão de ASSINE já -->
-            <input type="button" value="Assine já" id="ass">
+            <a href="../paginas/cadastro.html"><input type="button" value="Assine já" id="ass"></a>
+
             <!-- botão de LOGIN -->
             <input type="button" value="" id="user">
         </div>
@@ -52,7 +53,7 @@
             <h1 class="titulo-principal">Cadastro</h1>
 
         <!-- formulario de cadastro -->
-        <form action="#" method="POST" class="cad-user" autocomplete="on">
+        <form action="#" method="get" class="cad-user" autocomplete="on">
 
             <!-- dados pessoais -->
             <fieldset>
@@ -213,6 +214,6 @@
         <p>&copy;JL 2020-2022</p>
     </footer>
 
-    <script src="scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
