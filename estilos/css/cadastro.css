@@ -1,3 +1,4 @@
+
 /* INICIO DAS CONFIGURAÇÕES DO FORMULÁRIO DE CADASTRO DE USUÁRIO */
 
 .cad-user {
@@ -11,6 +12,11 @@
 
 .cad-user input {
     height: 3rem;
+    border: 1px solid #ccc;
+}
+
+.cad-user input:focus {
+    border: 2px solid var(--azul_1);
 }
 
 .cad-user fieldset {
@@ -59,3 +65,26 @@
     font-size: 1rem !important;
     padding: .3rem 0 !important;
 }
+
+.btn-form {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    width: 8rem;
+    background-color: var(--azul_1);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--branco_1);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.btn-form:hover {
+    color: var(--azul_1);
+    background-color: var(--branco_1);
+}
+
+/* FIM DAS CONFIGURAÇÕES DO FORMULÁRIO DE CADASTRO DE USUÁRIO */
