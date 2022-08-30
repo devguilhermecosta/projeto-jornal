@@ -1,0 +1,69 @@
+/*INICIO DAS CONFIGURAÇÕES DA TELA DE LOGIN*/
+
+.principal-login {
+    min-height: calc(100vh - 204px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo-principal {
+    align-self: flex-start;
+}
+
+.form-login {
+    width: 85vw;
+    max-width: 300px;
+    font-size: 1.5rem;
+    background-color: var(--branco_1);
+    border-radius: 1.5rem;
+    padding: .5rem;
+    align-self: flex-start;
+}
+
+.form-login fieldset {
+    border: none;
+}
+
+.form-login > fieldset > label {
+    display: block;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.form-login > fieldset > input {
+    display: block;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #ccc;
+}
+
+.form-login input[type="button"] {
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 10rem;
+    background-color: var(--azul_1);
+    color: var(--branco_1);
+    border: none;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.form-login input[type="button"]:hover {
+    color: var(--azul_1);
+    background-color: var(--branco_1);
+    border: 1px solid var(--azul_1);
+}
+
+.form-login a {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--azul_1);
+}
+
+/*FIM DAS CONFIGURAÇÕES DA TELA DE LOGIN*/

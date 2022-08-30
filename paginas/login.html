@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornal Local | Cadastro</title>
+    <link rel="shortcut icon" href="imagens/favicon/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/css/style.css" media="all"> <!-- para telas de até 768px -->
+    <link rel="stylesheet" href="../estilos/css/login.css"> <!-- style para a página de login -->
+</head>
+<body>
+    <!-- header -->
+    <header id="header">
+
+        <!-- logo -->
+        <a class="logo" href="../index.html">
+            <p>JL</p>
+        </a>
+
+        <!-- menu -->
+        <menu class="menu">
+            <input type="checkbox" name="menu-mobile" id="menu-mobile">
+            <label for="menu-mobile" id="label-menu"></label>
+            <label for="menu-mobile" id="label-menu-2"></label>
+            <ul class="itens-menu">
+                <li><a href="#" class="btn-menu" onclick="fechar()">Editoriais</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Últimas</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Brasil</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Mundo</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Economia</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Saúde</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Cultura</a></li>
+                <li><a href="#" class="btn-menu" onclick="fechar()">Esportes</a></li>
+            </ul>
+        </menu>
+
+        <!-- div com botões de ASSINE JÁ e LOGIN -->
+        <div class="user-button-menu">
+            <!-- botão de ASSINE já -->
+            <a href="../paginas/cadastro.html"><input type="button" value="Assine já" id="ass"></a>
+
+            <!-- botão de LOGIN -->
+            <a href="../paginas/login.html"><input type="button" value="" id="user"></a>
+        </div>
+
+    </header>
+
+    <!-- main -->
+    <main class="main-login">
+        <!-- Login -->
+        <section class="principal principal-login">
+            <h1 class="titulo-principal">Login</h1>
+          
+            <!-- formulario de login -->
+            <form action="#" method="POST" class="form-login" autocomplete="on">
+                <fieldset>
+                    <!-- usuário -->
+                    <label for="iuser">Usuário:</label>
+                    <input type="text" name="user" id="iuser" required>
+
+                    <!-- senha -->
+                    <label for="isenha">Senha:</label>
+                    <input type="password" name="senha" id="isenha" required>
+
+                    <!-- botão de login -->
+                    <input type="button" value="Entrar">
+
+                    <!-- recuperar senha -->
+                    <a href="#">Recuperar senha</a>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <article class="detalhes-rodape">
+            <a href="#">Fale conosco</a>
+            <a href="#">Portal do assinante</a>
+        </article>
+        
+        <article class="detalhes-rodape">
+            <a href="#">Anuncie</a>
+            <a href="#">Trabalhe conosco</a>
+        </article>
+
+        <article class="detalhes-rodape">
+            <a href="#">Termos de uso</a>
+            <a href="#">Política de privacidade</a>
+        </article>
+        <p>&copy;JL 2020-2022</p>
+    </footer>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

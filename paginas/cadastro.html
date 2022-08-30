@@ -41,194 +41,194 @@
             <a href="../paginas/cadastro.html"><input type="button" value="Assine já" id="ass"></a>
 
             <!-- botão de LOGIN -->
-            <input type="button" value="" id="user">
+            <a href="../paginas/login.html"><input type="button" value="" id="user"></a>
         </div>
 
     </header>
 
     <!-- main -->
     <main>
-        <!-- noticias e últimas noticias -->
+        <!-- cadastro -->
         <section class="principal">
             <h1 class="titulo-principal">Cadastro</h1>
 
-        <!-- formulario de cadastro -->
-        <form action="#" method="get" class="cad-user" autocomplete="on">
+            <!-- formulario de cadastro -->
+            <form action="#" method="get" class="cad-user" autocomplete="on">
 
-            <!-- dados pessoais -->
-            <fieldset class="field-flex">
-                <p>Dados pessoais</p>
+                <!-- dados pessoais -->
+                <fieldset class="field-flex">
+                    <p>Dados pessoais</p>
 
-                <!-- nome -->
-                <div class="box">
-                    <label for="inome">Nome:</label>
-                    <input type="text" name="nome" id="inome" required placeholder="Ex: Guilherme">
-                </div>
+                    <!-- nome -->
+                    <div class="box">
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required placeholder="Ex: Guilherme">
+                    </div>
 
-                <!-- sobrenome -->
-                <div class="box">
-                    <label for="isnome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="isnome" requried placeholder="Ex: Silva">
-                </div>
+                    <!-- sobrenome -->
+                    <div class="box">
+                        <label for="isnome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="isnome" requried placeholder="Ex: Silva">
+                    </div>
 
-                <!-- idade -->
-                <div class="box">
-                    <label for="iidade">Idade:</label>
-                    <input type="number" name="idade" id="iidade" min="1" max="150" required>
-                </div>
+                    <!-- idade -->
+                    <div class="box">
+                        <label for="iidade">Idade:</label>
+                        <input type="number" name="idade" id="iidade" min="1" max="150" required>
+                    </div>
 
-                <!-- genero -->
-                <h2>Gênero:</h2>
+                    <!-- genero -->
+                    <h2>Gênero:</h2>
 
-                <!-- genero masculino -->
-                <div class="sexo">
-                    <input type="radio" name="sexo" id="masculino" value="masculino">
-                    <label for="masculino">Masculino</label>
-                </div>
+                    <!-- genero masculino -->
+                    <div class="sexo">
+                        <input type="radio" name="sexo" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
 
-                <!-- genero feminino -->
-                <div class="sexo">
-                    <input type="radio" name="sexo" id="feminino" value="feminino" checked>
-                    <label for="feminino">Feminino</label>
-                </div>
+                    <!-- genero feminino -->
+                    <div class="sexo">
+                        <input type="radio" name="sexo" id="feminino" value="feminino" checked>
+                        <label for="feminino">Feminino</label>
+                    </div>
 
-                <!-- genero -> outro -->
-                <div class="sexo">
-                    <input type="radio" name="sexo" id="outro" value="outro">
-                    <label for="outro">Outro</label>
-                </div>
+                    <!-- genero -> outro -->
+                    <div class="sexo">
+                        <input type="radio" name="sexo" id="outro" value="outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                    
+                    <!-- email -->
+                    <div class="box">
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required placeholder="email@email.com">
+
+                        <label for="iconfemail">Confirmar e-mail:</label>
+                        <input type="email" name="confemail" id="iconfemail" required placeholder="email@email.com">
+                    </div>
+
+                    <!-- telefone -->
+                    <div class="box">
+                        <label for="itel">Telefone:</label>
+                        <input type="text" name="tel" id="itel" required placeholder="Ex: (XX) 9 1111-1111">
+                    </div>
+                </fieldset>
+
+                <!-- endereço -->
+                <fieldset>
+                    <p>Endereço</p>
+
+                    <!-- rua -->
+                    <div class="box">
+                        <label for="irua">Rua:</label>
+                        <input type="text" name="rua" id="irua" required placeholder="Ex: Rua das Oliveiras">
+                    </div>
+
+                    <!-- numero -->
+                    <div class="box">
+                        <label for="inumeri">Número:</label>
+                        <input type="number" name="numero" id="inumero" min="1" max="20000" required>
+                    </div>
+
+                    <!-- apartamento -->
+                    <div class="box">
+                        <label for="iapto">Apartamento:</label>
+                        <input type="text" name="apto" id="iapto" placeholder="Opcional">
+                    </div>
+
+                    <!-- bairro -->
+                    <div class="box">
+                        <label for="ibairro">Bairro:</label>
+                        <input type="text" name="bairro" id="ibairro" required placeholder="Ex: Centro">
+                    </div>
+
+                    <!-- municipio -->
+                    <div class="box">
+                        <label for="imunicipio">Municipio:</label>
+                        <input type="text" name="municipio" id="imunicipio" required placeholder="Ex: Curitiba">
+                    </div>
+
+                    <!-- estado -->
+                    <label for="iestado">Estado:</label>
+                    <select name="estado" id="iestado" required>
+                        <option value="" selected >Selecione um estado</option>
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhã">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select>
+
+                    <!-- cep -->
+                    <div class="box">
+                        <label for="icep">Cep:</label>
+                        <input type="text" name="cep" id="icep" required placeholder="Formato: 00.000-000">
+                    </div>
+
+                    <!-- complemento -->
+                    <div class="box">
+                        <label for="icomp">Complemento:</label>
+                        <input type="text" name="complemento" id="icomplemento" placeholder="Opcional">
+                    </div>
+                </fieldset>
+
+                <!-- usuario -->
+                <fieldset>
+
+                    <p>Usuário</p>
+                    
+                    <!-- nome usuario -->
+                    <div class="box">
+                        <label for="iuser">Usuario:</label>
+                        <input type="text" name="user" id="iuser" required>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" min="8" max="15">
+                    </div>
+
+                    <!-- senha -->
+                    <div class="text-senha box">
+                        <p>A senha deve ter entre 8 e 15 caracteres</p>
+                        <p>Deve ter letras e números</p>
+                        <p>Pelo menos uma letra minúscula</p>
+                        <p>Pelo menos uma letra maiúscula</p>
+                        <p>Pelo menos um caractere especial</p>
+                    </div>
+
+                    <!-- repetir a senha -->
+                    <div class="box">
+                        <label for="ireptsenha">Repita a senha:</label>
+                        <input type="password" name="reptsenha" id="ireptsenha" required min="8" max="15">
+                    </div>
+                </fieldset>
+
+                <!-- botões -->
+                <button class="btn-form" type="submit">Enviar</button>
+                <button class="btn-form" type="reset">Limpar</button>
                 
-                <!-- email -->
-                <div class="box">
-                    <label for="iemail">E-mail:</label>
-                    <input type="email" name="email" id="iemail" required placeholder="email@email.com">
-
-                    <label for="iconfemail">Confirmar e-mail:</label>
-                    <input type="email" name="confemail" id="iconfemail" required placeholder="email@email.com">
-                </div>
-
-                <!-- telefone -->
-                <div class="box">
-                    <label for="itel">Telefone:</label>
-                    <input type="text" name="tel" id="itel" required placeholder="Ex: (XX) 9 1111-1111">
-                </div>
-            </fieldset>
-
-            <!-- endereço -->
-            <fieldset>
-                <p>Endereço</p>
-
-                <!-- rua -->
-                <div class="box">
-                    <label for="irua">Rua:</label>
-                    <input type="text" name="rua" id="irua" required placeholder="Ex: Rua das Oliveiras">
-                </div>
-
-                <!-- numero -->
-                <div class="box">
-                    <label for="inumeri">Número:</label>
-                    <input type="number" name="numero" id="inumero" min="1" max="20000" required>
-                </div>
-
-                <!-- apartamento -->
-                <div class="box">
-                    <label for="iapto">Apartamento:</label>
-                    <input type="text" name="apto" id="iapto" placeholder="Opcional">
-                </div>
-
-                <!-- bairro -->
-                <div class="box">
-                    <label for="ibairro">Bairro:</label>
-                    <input type="text" name="bairro" id="ibairro" required placeholder="Ex: Centro">
-                </div>
-
-                <!-- municipio -->
-                <div class="box">
-                    <label for="imunicipio">Municipio:</label>
-                    <input type="text" name="municipio" id="imunicipio" required placeholder="Ex: Curitiba">
-                </div>
-
-                <!-- estado -->
-                <label for="iestado">Estado:</label>
-                <select name="estado" id="iestado" required>
-                    <option value="" selected >Selecione um estado</option>
-                    <option value="Acre">Acre</option>
-                    <option value="Alagoas">Alagoas</option>
-                    <option value="Amapá">Amapá</option>
-                    <option value="Amazonas">Amazonas</option>
-                    <option value="Bahia">Bahia</option>
-                    <option value="Ceará">Ceará</option>
-                    <option value="Distrito Federal">Distrito Federal</option>
-                    <option value="Espírito Santo">Espírito Santo</option>
-                    <option value="Goiás">Goiás</option>
-                    <option value="Maranhã">Maranhão</option>
-                    <option value="Mato Grosso">Mato Grosso</option>
-                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                    <option value="Minas Gerais">Minas Gerais</option>
-                    <option value="Pará">Pará</option>
-                    <option value="Paraíba">Paraíba</option>
-                    <option value="Paraná">Paraná</option>
-                    <option value="Pernambuco">Pernambuco</option>
-                    <option value="Piauí">Piauí</option>
-                    <option value="Rio de Janeiro">Rio de Janeiro</option>
-                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                    <option value="Rondônia">Rondônia</option>
-                    <option value="Roraima">Roraima</option>
-                    <option value="Santa Catarina">Santa Catarina</option>
-                    <option value="São Paulo">São Paulo</option>
-                    <option value="Sergipe">Sergipe</option>
-                    <option value="Tocantins">Tocantins</option>
-                </select>
-
-                <!-- cep -->
-                <div class="box">
-                    <label for="icep">Cep:</label>
-                    <input type="text" name="cep" id="icep" required placeholder="Formato: 00.000-000">
-                </div>
-
-                <!-- complemento -->
-                <div class="box">
-                    <label for="icomp">Complemento:</label>
-                    <input type="text" name="complemento" id="icomplemento" placeholder="Opcional">
-                </div>
-            </fieldset>
-
-            <!-- usuario -->
-            <fieldset>
-
-                <p>Usuário</p>
-                
-                <!-- nome usuario -->
-                <div class="box">
-                    <label for="iuser">Usuario:</label>
-                    <input type="text" name="user" id="iuser" required>
-                    <label for="isenha">Senha:</label>
-                    <input type="password" name="senha" id="isenha" min="8" max="15">
-                </div>
-
-                <!-- senha -->
-                <div class="text-senha box">
-                    <p>A senha deve ter entre 8 e 15 caracteres</p>
-                    <p>Deve ter letras e números</p>
-                    <p>Pelo menos uma letra minúscula</p>
-                    <p>Pelo menos uma letra maiúscula</p>
-                    <p>Pelo menos um caractere especial</p>
-                </div>
-
-                <!-- repetir a senha -->
-                <div class="box">
-                    <label for="ireptsenha">Repita a senha:</label>
-                    <input type="password" name="reptsenha" id="ireptsenha" required min="8" max="15">
-                </div>
-            </fieldset>
-
-            <!-- botões -->
-            <button class="btn-form" type="submit">Enviar</button>
-            <button class="btn-form" type="reset">Limpar</button>
-            
-        </form>
-
+            </form>
+        </section>
     </main>
 
     <!-- footer -->
