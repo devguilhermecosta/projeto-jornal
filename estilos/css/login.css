@@ -13,6 +13,7 @@
 
 .form-login {
     width: 85vw;
+    margin-bottom: 1rem;
     max-width: 300px;
     font-size: 1.5rem;
     background-color: var(--branco_1);
