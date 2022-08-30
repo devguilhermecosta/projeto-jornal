@@ -283,6 +283,14 @@ input[value=">"] {
     transform: rotate(270deg);
 }
 
+.tempo {
+    display: none;
+}
+
+.loc {
+    display: none;
+}
+
 /* FIM DAS CONFIGURAÇÕES DO MAIN */
 
 /* INICIO DAS CONFIGURAÇÕES DO FOOTER */
@@ -310,3 +318,16 @@ footer p {
 
 /* FIM DAS CONFIGURAÇÕES DO FOOTER */
 
+
+/*INICIO DAS MEDIA QUERIES*/
+
+@media screen and (min-width: 769px) {
+    .tempo, .loc {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+/*FIM DAS MEDIA QUERIES*/
