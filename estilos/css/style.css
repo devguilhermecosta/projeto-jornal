@@ -329,5 +329,33 @@ footer p {
     }
 }
 
+@media screen and (min-width: 992px) {
+    .logo {
+        order: 2;
+        align-self: center;
+    }
+
+    .menu {
+        order: 1;
+    }
+
+    #label-menu {
+        margin-right: 2rem;
+    }
+
+    #menu-mobile:checked~.itens-menu {
+        width: 200px;
+        height: 100%;
+        text-align: left;
+    }
+
+    #menu-mobile:checked ~ #label-menu {
+        left: 0;
+        margin-top: 2rem;
+        margin-left: 15rem;
+        width: 3.8rem;
+    }
+}
+
 
 /*FIM DAS MEDIA QUERIES*/
