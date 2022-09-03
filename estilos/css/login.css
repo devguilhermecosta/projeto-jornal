@@ -1,7 +1,7 @@
 /*INICIO DAS CONFIGURAÇÕES DA TELA DE LOGIN*/
 
 .principal-login {
-    min-height: calc(100vh - 204px);
+    min-height: calc(100vh - 194px);
     display: flex;
     flex-direction: row;
     align-items: center;

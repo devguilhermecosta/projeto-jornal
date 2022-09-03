@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal Local | Cadastro</title>
     <link rel="shortcut icon" href="imagens/favicon/favicon_1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../estilos/css/style.css" media="all"> <!-- para telas de até 768px -->
+    <link rel="stylesheet" href="../estilos/css/style.css"> <!-- para telas de até 768px -->
     <link rel="stylesheet" href="../estilos/css/login.css"> <!-- style para a página de login -->
 </head>
 <body>
@@ -14,17 +14,17 @@
     <header id="header">
 
         <!-- logo -->
-        <a class="logo" href="../index.html">
+        <a id="logo" class="logo" href="../index.html">
             <p>JL</p>
         </a>
 
         <!-- menu -->
-        <menu class="menu">
-            <input type="checkbox" name="menu-mobile" id="menu-mobile">
+        <menu id="menu" class="menu">
+            <input type="checkbox" name="menu-mobile" id="menu-mobile" onchange="espaco()">
             <label for="menu-mobile" id="label-menu"></label>
             <label for="menu-mobile" id="label-menu-2"></label>
             <ul class="itens-menu">
-                <li><a href="#" class="btn-menu" onclick="fechar()">Editoriais</a></li>
+                <li><a href="#" onclick="fechar()">Editoriais</a></li>
                 <li><a href="#" onclick="fechar()">Últimas</a></li>
                 <li><a href="#" onclick="fechar()">Brasil</a></li>
                 <li><a href="#" onclick="fechar()">Mundo</a></li>

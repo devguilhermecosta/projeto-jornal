@@ -1,8 +1,10 @@
 function fechar() {
     var menu = document.getElementById('menu-mobile')
+    var logo = document.getElementById('logo')
 
     if (menu.checked == true) {
-        menu.checked = false
+        menu.checked = false;
+        logo.style.marginLeft = '0rem';
     }
 }
 
@@ -11,9 +13,9 @@ function espaco() {
     var menu = document.getElementById('menu-mobile')
     var largura = window.innerWidth
 
-    if (menu.checked == true && largura >= 992 ) {
-        logo.style.marginLeft = '5.9rem'
+    if (menu.checked == true && largura >= 991 ) {
+        logo.style.marginLeft = '3.9rem';
     } else {
-        logo.style.marginLeft = '0'
+        logo.style.marginLeft = '0rem';
     }
 }
