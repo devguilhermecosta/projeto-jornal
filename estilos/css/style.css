@@ -250,6 +250,8 @@ footer {
     margin: .5rem .5rem;
     text-align: center;
     gap: 1rem;
+    cursor: pointer;
+    /* background-color: #000000d3; */
 }
 
 .noticias h2 {
@@ -306,6 +308,10 @@ input[value=">"] {
     display: none;
 }
 
+.propaganda {
+    display: none;
+}
+
 /* FIM DAS CONFIGURAÇÕES DO MAIN */
 
 /* INICIO DAS CONFIGURAÇÕES DO FOOTER */
@@ -320,10 +326,6 @@ input[value=">"] {
     text-decoration: none;
     color: var(--branco_1);
 }
-
-.detalhes-rodape a:hover::after {
-    content: ' ☜';
-}   
 
 footer p {
     padding: .3rem;
@@ -460,6 +462,7 @@ footer p {
         background-color: var(--branco_1);
         padding: 1rem;
         margin-bottom: 1rem;
+        cursor: pointer;
     }
 
     .box-ultimas-noticias img {
@@ -472,7 +475,12 @@ footer p {
         font-style: italic;
     }
 
-    .loc_2, .tempo_2 {
+    .propaganda {
+        display: block;
+        text-align: center;
+    }
+
+    .loc_2, .tempo_2, .propaganda {
         margin-top: 1rem;
     }
 
